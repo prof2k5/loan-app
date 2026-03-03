@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main-container {
+            /* margin: 0 auto; */
+            background-color: beige;
+            padding: 5px;
+            /* margin-left: 10px; */
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 20px;   
+        }
+        .field {
+
+            display: block;
+            margin: 10px auto;
+            /* line-height: 15px; */
+            /* justify-content: center; */
+            align-items: center;
+            width: 50%;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .button{
+            display: block;
+            background-color: aquamarine;
+            margin: 0 auto;
+            width: 50%;
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .heading {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <h1 class="heading">Interest Rate Calculator</h1>
+    
+    <form action="" class="form">
+    <input type="number" class="field" id="principal" placeholder="Enter Amount to Borrow" required />
+    <input type="number" class="field" id="time" maxlength="2" placeholder="Duration in years" required />
+    <input type="number" placeholder="Int Rate" class="field" id="rate" maxlength="2" required />
+    <input type="button" id="button" class="button" value="Calculate">
+    </form>
+     
+    <script type="text/javascript" src="./interest.js"></script>
+    </div>
+    
+</body>
+</html>
