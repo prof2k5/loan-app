@@ -33,7 +33,7 @@
 // })
 
 
-
+// __________EVEN A SMARTER WAY TO DO IT WITHOUT A CONSOLE__________________
 const tick = document.getElementById("button");
 let principalInput = document.getElementById("principal");
 let timeInput = document.getElementById("time");
@@ -52,7 +52,8 @@ tick.addEventListener("click", () => {
     result.innerHTML = `
         Amount Borrowed: ${principal} <br>
         Duration: ${time} Year(s) <br>
-        Interest Rate: ${rate}% <br><br>
+        Interest Rate: ${rate}% <br><br>    
+        Interest Accrued: ${interest} <br>
         Total Amount to Pay: ${totalAmount}
     `;
 });
